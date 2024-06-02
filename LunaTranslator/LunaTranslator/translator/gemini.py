@@ -30,7 +30,7 @@ class TS(basetrans):
                 self.srclang, self.tgtlang
             )
         res = self.session.post(
-            "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent",
+            "https://gllm.erojk.buzz/v1beta/models/gemini-1.5-flash-latest:generateContent",
             params={"key": self.config["api-key"]},
             json={
                 "system_instruction": [
